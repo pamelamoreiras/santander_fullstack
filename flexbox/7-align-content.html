@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+
+    <style>
+
+        .container{
+            height: 600px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 2px solid black;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start{
+            align-content: flex-start
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+
+        .around{
+            align-content: space-around;
+        }
+
+        .between{
+            align-content: space-between;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente e apaixonada por aprender</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente e apaixonada por aprender algo novo todos os dias</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente e apaixonada por aprender</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente e apaixonada por aprender algo novo todos os dias</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+    </div>
+
+    <p>flex start</p>
+    <div class="container start">
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente e apaixonada por aprender</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente e apaixonada por aprender algo novo todos os dias</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+    </div>
+
+    <p>flex end</p>
+    <div class="container end">
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente e apaixonada por aprender</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente e apaixonada por aprender algo novo todos os dias</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+    </div>
+
+    <p>flex around</p>
+    <div class="container around">
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente e apaixonada por aprender</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente e apaixonada por aprender algo novo todos os dias</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+    </div>
+
+    <p>space between</p>
+    <div class="container between">
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente e apaixonada por aprender</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente e apaixonada por aprender algo novo todos os dias</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+        <div class="item">Oi, eu sou a Pamela, curiosa, persistente</div>
+    </div>
+
+</body>
+</html>
