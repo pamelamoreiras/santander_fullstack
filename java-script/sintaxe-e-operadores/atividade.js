@@ -2,7 +2,7 @@ function compararNumeros(num1, num2){
     const primeiraFrase = criarPrimeiraFrase(num1, num2);
     const segundaFrase = criarSegundaFrase(num1, num2);
 
-    return '${primeiraFrase} ${segundaFrase}'
+    return `${primeiraFrase} ${segundaFrase}`
 }
 
 function criarPrimeiraFrase(num1, num2){
@@ -12,7 +12,7 @@ function criarPrimeiraFrase(num1, num2){
         sãoIguais = 'não';
     }
 
-    return 'Os números ${num1} e ${num2} ${saoIguais} ão iguais. '
+    return `Os números ${num1} e ${num2} ${saoIguais} não iguais. `
 }
 
 function criarSegundaFrase(num1, num2){
@@ -32,7 +32,7 @@ function criarSegundaFrase(num1, num2){
         resultado20 = 'maior';
     }
 
-    return 'sua soma é ${soma}, que é ${resultado10} que 10 e ${resultado20} que 20.';
+    return `sua soma é ${soma}, que é ${resultado10} que 10 e ${resultado20} que 20.`;
 }
 
 console.log(compararNumeros(1,2))
